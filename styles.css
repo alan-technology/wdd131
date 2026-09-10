@@ -1,31 +1,31 @@
-/* Apply Grid to the body */
+/* Reset básico */
 body {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto; /* header, nav, main, footer */
-  min-height: 100vh;
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Fondo general */
 }
 
-/* Header styling */
-header {
-  background: #4a90e2;
-  color: white;
-  padding: 1rem;
+/* Header y Footer */
+header, footer {
+  background-color: #9e1212;
+  color: rgb(101, 63, 63);
   text-align: center;
+  padding: 1rem;
 }
 
-/* Navigation menu with Flexbox */
+
+/* Barra de navegación */
+nav {
+  background-color: #000;
+}
+
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: flex;              /* Menú horizontal */
+  justify-content: center;    /* Centrado */
+  gap: 2rem;                  /* Espacio entre enlaces */
   list-style: none;
   margin: 0;
-  padding: 1rem;
-  background: #333;
+  padding: 0.5rem 0;
 }
 
 nav a {
@@ -38,15 +38,41 @@ nav a:hover {
   color: #4a90e2;
 }
 
-/* Main content */
+/* Contenido principal y aside */
 main {
-  padding: 2rem;
+  display: flex;              /* Dos columnas */
+  padding: 1rem;
+}
+
+.content {
+  flex: 3;                    /* Área principal más grande */
+  background-color: #ddd;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+aside {
+  flex: 1;                    /* Área lateral más pequeña */
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Responsive: en pantallas pequeñas el aside se mueve abajo */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }

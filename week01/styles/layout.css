@@ -1,0 +1,410 @@
+:root {
+    --primary-color: #055a05;
+    /*Olive Leaf*/
+    --accent1-color: #264653;
+    /*Charcoal Blue*/
+    --accent2-color: #e9c46a;
+    /*Tuscan Sun*/
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+
+    color: var(--accent2-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #873535;
+    max-width: 2000px;
+    margin-bottom: 2rem;
+
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: whitesmoke;
+    padding: 35px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+.trip header {
+    position: static;
+}
+
+header,
+footer,
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h3 {
+    text-align: center;
+}
+
+nav,
+p,
+h2,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+    color: black;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 2px;
+    width: 840px;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+}
+
+.hero article img {
+    float: right;
+    width: 126px;
+}
+
+.hero article {
+    position: absolute;
+    top: 329px;
+    width: 800px;
+    padding: 12px;
+    text-align: center;
+    opacity: 0.95;
+    background-color: whitesmoke;
+    color: #fff;
+}
+
+/* -------------------------
+   HISTORY SECTION (3 COLUMNS)
+-------------------------- */
+.history {
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* -------------------------
+   ADVENTURE SECTION (5 COLUMNS)
+-------------------------- */
+
+.adventure {
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 40px 20px;
+    margin-top: 2rem;
+    position: static;
+}
+
+.cta h1 {
+    margin: 0 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* GRID SECTION */
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-info img {
+    width: 100%;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    padding: 8px;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+/* TRIP GRID */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip img {
+    width: 100%;
+}
+
+.trip {
+    text-align: center;
+}
+
+/* TABLE */
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--accent2-color);
+}
+
+/* -------------------------
+   EMPLOYEE SECTION (3 COLUMNS)
+-------------------------- */
+
+.employee {
+    text-align: center;
+}
+
+.employee-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.employee-gallery figure {
+    margin: 0;
+}
+
+.employee-gallery figcaption {
+    font-size: 0.9rem;
+}
+
+.address {
+    background-color: whitesmoke;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.address-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.address h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.address p {
+    margin: 1px 0;
+    line-height: 14px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: stretch;
+}
+
+/* Map styling */
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Form styling */
+.contact-form {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    text-align: left;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 8px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    transform: scale(1.1);
+}
+
+.socialmedia img {
+    width: 35px;
+    height: auto;
+}
+
+.socialmedia a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+footer,
+p {
+    text-align: center;
+    padding-top: 20px;
+}
