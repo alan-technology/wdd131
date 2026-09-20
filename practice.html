@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pratice.css">
+</head>
+<body>
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+  </header>
+  
+  <main>
+    <h1>Alan Feliz</h1>
+  </main>
+
+  <footer>
+    <p>&commat; <span id="currentmonth"></span> Alan | Dominican Republic</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    const months = [
+      "January","February","March","April","May","June",
+      "July","August","September","October","November","December"
+    ];
+
+    document.getElementById("currentmonth").textContent = months[new Date ().getMonth()];
+    document.getElementById("lastModified").textContent = "last Modified " + document.lastModified;
+
+   
+  </script>
+</body>
+</html>
+&copf;

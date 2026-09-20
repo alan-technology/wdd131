@@ -1,5 +1,6 @@
-// Año actual dinámico
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-// Última fecha de modificación del documento
-document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  const meses = [
+    "Enero","Febrero","Marzo","Abril","Mayo","Junio",
+    "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
+  ];
+  document.getElementById("currentmonth").textContent = meses[new Date().getMonth()];
+  document.getElementById("lastModified").textContent = "Última modificación: " + document.lastModified;

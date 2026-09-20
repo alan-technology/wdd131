@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | WDD 131 </title>
+  <meta name="description" content="A photo album of temples of The Church of Jesus Christ of Latter-day Saints.">
+  <meta name="author" content="Alan Feliz">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="styles/temples.css">
+
+  <!-- Larger view CSS (overrides mobile styles when screen is wider) -->
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript (deferred so it loads after HTML) -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="site-title">Temple Album</div>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"> 
+        <span class="menu-icon">☰</span>
+    </button>
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#old">Old</a></li>
+            <li><a href="#new">New</a></li>
+            <li><a href="#large">Large</a></li>
+            <li><a href="#small">Small</a></li>
+        </ul>
+    </nav>
+    
+    
+  </header>
+
+  <main>
+    <h1>Temple Album</h1>
+    <div class="gallery">
+      <figure>
+        <img src="images/san-diego1.jpeg" alt="San Diego California Temple" width="500" height="333">
+        <figcaption>San Diego, California</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/san-diego2-.jpeg" alt="San Diego California Temple, second view" width="500" height="333">
+        <figcaption>San Diego, California</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/washington-templo.jpeg" alt="Washington D.C. Temple at dusk" width="500" height="333">
+        <figcaption>Washington, D.C.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/lago-templo.webp" alt="Lagos Nigeria Temple" width="500" height="333">
+        <figcaption>Lagos Nigeria</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/rd-templo.jpeg" alt="Dominican RepublicTemple" width="500" height="">
+        <figcaption>Santo Domingo, Dominican Republic</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/haiti-templo.jpg" alt="Haiti Temple" width="500" height="333">
+        <figcaption>Haiti</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/san_juan_puerto_rico_temple.webp" alt="San Juan, Puerto Rico Temple" width="500" height="333">
+        <figcaption>San Juan, Puerto Rico</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/salt-lake-templo.jpeg" alt="Salt Lake Temple spires" width="500" height="333">
+        <figcaption>Salt Lake City, Utah</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/mexico-templo.jpeg" alt="mexico Temple" width="500" height="400">
+        <figcaption>mexico</figcaption>
+      </figure>
+    </div>
+    
+      
+  </main>
+
+  <footer>
+  <p>© <span id="currentyear"></span> Alan | Dominican Republic</p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
+
