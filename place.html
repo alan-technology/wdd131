@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="author" content="Jhei Salvatierra">
+    <meta name="description" content="Country page containing population, land mass, and current weather data">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer="" src="scripts/place.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>amazona</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/toucan-amazona.jpeg" media="(min-width: 1500px)">
+                <source srcset="images/little-monkey.jpeg" media="(min-width: 500px)">
+                <img src="images/tarsier_small.webp" alt="image of a tarsier" width="360" height="472">
+            </picture>
+        </div>
+        <section id="data">
+            <h2>Data</h2>
+            <ol class="labels">
+                <li>Area:</li>
+                <li>Population: </li>
+                <li>Capital: </li>
+                <li>Languages: </li>
+                <li>Currency: </li>
+                <li>Time Zone: </li>
+                <li>Calling Code: </li>
+            </ol>
+            <ol class="values">
+                <li>5,500,000 km²</li>
+                <li>34,000,000</li>
+                <li>Manaus</li>
+                <li>Portuguese</li>
+                <li>Brazilian real</li>
+                <li>UTC−4</li>
+                <li>+55</li>
+</ol>
+        </section>
+        <section id="weather">
+            <div>
+                <h2>Weather <span id="emoji">🌤️</span></h2>
+                <img id="weather-icon" src="images/weather.svg" alt="cloud and sun">
+
+            </div>
+            <ol class="labels">
+                <li>Temperature:</li>
+                <li>Conditions:</li>
+                <li>Wind:</li>
+                <li>Wind Chill:</li>
+            </ol>
+            <ol class="values">
+                <li>10°C</li>
+                <li>Partly Cloudy</li>
+                <li>5 km/h</li>
+                <li id="wind-chill">9.8</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Alan Feliz</p>
+        <p>Santo Domingo | Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+
+</body>
+</html>
