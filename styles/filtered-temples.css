@@ -1,12 +1,11 @@
 :root {
-	--deep-teal: #5a0f0f;
+	--deep-teal: #173f4f;
 	--teal: #2c7a7b;
 	--gold: #d9a441;
 	--paper: #f4f1ea;
 	--ink: #17202a;
-	--white: hsl(0, 0%, 92%);
+	--white: #ffffff;
 	--border: #d6cdbd;
-    
 }
 
 * {
@@ -174,9 +173,3 @@ footer {
 footer p {
 	margin: 0.35rem 0;
 }
-
-strong{
-    color: rgb(150, 52, 153);
-
-}
-
