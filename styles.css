@@ -42,6 +42,7 @@ nav a:hover {
 main {
   display: flex;              /* Dos columnas */
   padding: 1rem;
+  
 }
 
 .content {
