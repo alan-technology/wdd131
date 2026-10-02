@@ -1,11 +1,15 @@
 :root {
-	--deep-teal: #173f4f;
+	--deep-teal: #104099;
 	--teal: #2c7a7b;
-	--gold: #d9a441;
+	--gold: #ee7d7d;
 	--paper: #f4f1ea;
 	--ink: #17202a;
 	--white: #ffffff;
 	--border: #d6cdbd;
+	
+}
+strong {
+	color: rgb(124, 63, 133);
 }
 
 * {
