@@ -33,4 +33,10 @@ h1, h2 {
 .container .child {
   color: #2a9d8f;
 }
+:root {
+  --primary-color: #264653;
+}
+body {
+  color: var(--primary-color);
+}
 
