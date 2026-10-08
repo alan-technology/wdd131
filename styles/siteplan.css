@@ -1,42 +1,60 @@
-/* Typography */
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
-  color: #264653;
-}
-
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
-  color: #2a9d8f;
-}
-
-/* Color Scheme classes */
-.color-primary {
-  color: #264653;
-}
-.color-links {
-  color: #2a9d8f;
-}
-.color-accent {
-  color: #e9c46a;
-}
-.color-background {
-  color: #ffffff;
-  background-color: #264653;
-  padding: 2px 6px;
-}
-.container {
-  color: #264653;
-}
-.container .child {
-  color: #2a9d8f;
-}
+/* Variables de color */
 :root {
   --primary-color: #264653;
-}
-body {
-  color: var(--primary-color);
+  --links-color: #2a9d8f;
+  --accent-color: #e9c46a;
+  --background-color: #ffffff;
 }
 
+/* Base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Encabezados */
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--links-color);
+  margin-bottom: 0.5em;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--links-color);
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Secciones */
+section {
+  padding: 1rem;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
