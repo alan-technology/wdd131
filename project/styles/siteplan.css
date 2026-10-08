@@ -4,17 +4,17 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
-  color: #264653;
+  color: #37748b;
 }
 
 h1, h2 {
   font-family: 'Poppins', sans-serif;
-  color: #2a9d8f;
+  color: #188578;
 }
 
 /* Color Scheme classes */
 .color-primary {
-  color: #264653;
+  color: #4c5c63;
 }
 .color-links {
   color: #2a9d8f;
