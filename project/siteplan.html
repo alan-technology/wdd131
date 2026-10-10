@@ -1,82 +1,62 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review: Pacana Punta Cana </title>
+  <title>Product Review: Pacana Punta Cana</title>
   <meta name="description" content="Submit a product review by selecting a product, rating it, and sharing your experience.">
   <meta name="author" content="Alan Feliz">
 
-  <!-- Google Fonts (correct way) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/siteplan.css">
-  <script src="scripts/script.js"></script>
-  
-
-
-  <!-- Tu CSS -->
-  
 </head>
-
-
-
 <body>
   <header>
     <h1>Site Plan</h1>
   </header>
 
-
   <main>
-  <section>
-  <h2>Site Name</h2>
-  <img src="images/ejemplo.jpg" alt="Ejemplo">
-  <p><strong>Name:</strong> Pacana Punta Cana</p>
-  <p><strong>Logo:</strong> 🌴🏖️ (temporary logo)</p>
-  <p><strong>Description:</strong> I chose this name because it reflects the tropical and relaxing atmosphere of Punta Cana, making it attractive for visitors looking for unique Caribbean experiences.</p>
-</section>
-<section>
-  <h2>Site Purpose</h2>
-  <p>The purpose of this site is to provide information about cultural tours, nature experiences, and local events in Punta Cana. It will serve as a hub for visitors to explore activities, book tours, and connect with the community.</p>
-</section>
-<section>
-  <h2>Scenarios</h2>
-  <ul>
-    <li>What cultural and nature tours can I book through Pacana Punta Cana?</li>
-    <li>Where can I find information about upcoming local events and community activities in Punta Cana?</li>
-  </ul>
-</section>
-<section>
-  <h2>Color Scheme</h2>
-  <ul>
-    <li><span class="color-primary">#264653</span> – Primary text color</li>
-    <li><span class="color-links">#2a9d8f</span> – Buttons and links</li>
-    <li><span class="color-accent">#e9c46a</span> – Accent highlights</li>
-    <li><span class="color-background">#ffffff</span> – Background</li>
-  </ul>
-</section>
+    <section>
+      <h2>Site Name</h2>
+      <img src="images/ejemplo.jpg" alt="Ejemplo">
+      <p><strong>Name:</strong> Pacana Punta Cana</p>
+      <p><strong>Logo:</strong> 🌴🏖️ (temporary logo)</p>
+      <p><strong>Description:</strong> I chose this name because it reflects the tropical and relaxing atmosphere of Punta Cana.</p>
+    </section>
 
-  <section>
-  <h2>Typography</h2>
-  <p><strong>Heading Font:</strong> Poppins – used for titles and headings.</p>
-  <p><strong>Body Font:</strong> Roboto – used for paragraphs and general text.</p>
-</section>
-
-  <section>
-  <h2>Wireframes</h2>
-  <p>Mobile Layout:</p>
-  <img src="images/wireframe-mobile.png" alt="Mobile wireframe">
-
-  <p>Desktop Layout:</p>
-  <img src="images/wireframe-desktop.png" alt="Desktop wireframe">
-</section>
-
-
-
-
+    <section>
+      <h2>Choose a Product</h2>
+      <select id="productName"></select>
+    </section>
   </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span></p>
+    <p><span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    const products = [
+      { id: 1, name: "Laptop" },
+      { id: 2, name: "Phone" },
+      { id: 3, name: "Tablet" }
+    ];
+
+    const productSelect = document.querySelector("#productName");
+    products.forEach((product) => {
+      const option = document.createElement("option");
+      option.value = product.id;
+      option.textContent = product.name;
+      productSelect.appendChild(option);
+    });
+
+    const currentYear = new Date().getFullYear();
+    document.querySelector("#currentyear").textContent = currentYear;
+    document.querySelector("#lastModified").textContent =
+      `Last Modification: ${document.lastModified}`;
+  </script>
 </body>
 </html>
