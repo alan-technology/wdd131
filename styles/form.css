@@ -5,19 +5,16 @@
 }
 
 :root {
-    --navy: #264653;
-    --teal: #2a9d8f;
-    --gold: #e9c46a;
-    --gold-hover: #d99d00;
+    --navy: #12355b;
+    --dark: #1f2933;
+    --gold: #f4b400;
     --cream: #f4f6f8;
     --white: #ffffff;
     --text: #222222;
     --muted: #555555;
     --border: #a8b0b8;
     --focus: #005fcc;
-    --error: #b00020;
 }
-
 
 body {
     font-family: "Roboto", sans-serif;
