@@ -25,7 +25,7 @@ const features = [
 const featureContainer = document.querySelector("#features");
 
 if (featureContainer) {
-  features.forEach((feature) => {
+features.forEach((feature) => {
     const article = document.createElement("article");
     article.classList.add("feature-card");
 
@@ -47,7 +47,7 @@ if (featureContainer) {
     article.appendChild(paragraph);
 
     featureContainer.appendChild(article);
-  });
+});
 }
 
 
